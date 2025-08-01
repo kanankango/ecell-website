@@ -129,7 +129,8 @@ export default function TeamPage() {
         },
       ],
     },
-  ]
+  ],
+    
   {
       title: "Video Editing Team",
       members: [
