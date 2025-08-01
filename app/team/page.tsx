@@ -28,7 +28,7 @@ export default function TeamPage() {
     {
       name: "Sarang Alhawat",
       position: "President",
-      image: "/Sarang.jpg",
+      image: "/sarang.jpg",
       email: "sarang@ecell.cgc.edu.in",
       linkedin: "https://www.linkedin.com/in/sarang-ahlawat/",
       github: "#",
