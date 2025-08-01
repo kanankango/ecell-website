@@ -36,7 +36,7 @@ export default function TeamPage() {
     {
       name: "Aashi Raghuwanshi",
       position: "Vice President",
-      image: "/placeholder.svg?height=150&width=150",
+      image:  "/aashi.jpg",
       email: "aashi@ecell.cgc.edu.in",
       linkedin: "#",
       github: "#",
