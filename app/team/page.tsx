@@ -1,3 +1,4 @@
+
 "use client"
 
 import { motion } from "framer-motion"
@@ -11,7 +12,7 @@ export default function TeamPage() {
     {
       name: "Dr. Sushil Kumar",
       position: "HOD & Faculty Advisor",
-      image:"/sushil.jpg" ,
+      image: "/sushil.jpg",
       email: "sushil.kumar@cgc.edu.in",
       linkedin: "#",
     },
@@ -36,7 +37,7 @@ export default function TeamPage() {
     {
       name: "Aashi Raghuwanshi",
       position: "Vice President",
-      image:  "/aashi.jpg",
+      image: "/aashi.jpg",
       email: "aashi@ecell.cgc.edu.in",
       linkedin: "#",
       github: "#",
@@ -73,18 +74,19 @@ export default function TeamPage() {
         {
           name: "Kanan Kango",
           position: "#",
-          image: "/placeholder.svg?height=120&width=120",
+          image: "/placeholder.svg",
           email: "kanan@ecell.cgc.edu.in",
         },
         {
           name: "Ishita",
           position: "#",
-          image: "/.jpg",
+          image: "/placeholder.svg",
           email: "arjun@ecell.cgc.edu.in",
-        },{
+        },
+        {
           name: "Loveneet",
           position: "#",
-          image: "/Unnati.jpg",
+          image: "/Loveneet.jpg",
           email: "arjun@ecell.cgc.edu.in",
         },
       ],
@@ -94,7 +96,7 @@ export default function TeamPage() {
       members: [
         {
           name: "Lakshya",
-          position: "External Operations and Innovation Head ",
+          position: "External Operations and Innovation Head",
           image: "/Lakshay.jpg",
           email: "lakshay@ecell.cgc.edu.in",
         },
@@ -104,10 +106,10 @@ export default function TeamPage() {
           image: "/Rujul.jpg",
           email: "rujul@ecell.cgc.edu.in",
         },
-         {
+        {
           name: "Smriti",
           position: "#",
-          image: "/Smriti].jpg",
+          image: "/Smriti.jpg",
           email: "smriti@ecell.cgc.edu.in",
         },
       ],
@@ -124,25 +126,23 @@ export default function TeamPage() {
         {
           name: "Kamakshi",
           position: "#",
-          image: "/Kamakshi",
+          image: "/Kamakshi.jpg",
           email: "kamakshi@ecell.cgc.edu.in",
         },
       ],
     },
-  ],
-    
-  {
+    {
       title: "Video Editing Team",
       members: [
         {
           name: "Sampark",
-          position: "",
+          position: "#",
           image: "/Sampark.jpg",
           email: "samparkt@ecell.cgc.edu.in",
         },
         {
           name: "Vibhor",
-          position: "",
+          position: "#",
           image: "/Vibhor.jpg",
           email: "vibhor@ecell.cgc.edu.in",
         },
@@ -154,7 +154,6 @@ export default function TeamPage() {
     <div className="min-h-screen bg-black text-white">
       <Navbar />
 
-      {/* Hero Section */}
       <section className="pt-24 pb-16 bg-black">
         <div className="container mx-auto px-4">
           <motion.div
@@ -174,7 +173,6 @@ export default function TeamPage() {
         </div>
       </section>
 
-      {/* Faculty Section */}
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <motion.div
@@ -215,16 +213,10 @@ export default function TeamPage() {
                     </h3>
                     <p className="text-yellow-400 font-semibold mb-4">{member.position}</p>
                     <div className="flex justify-center space-x-4">
-                      <a
-                        href={`mailto:${member.email}`}
-                        className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition-all duration-300"
-                      >
+                      <a href={`mailto:${member.email}`} className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition-all duration-300">
                         <Mail className="h-5 w-5" />
                       </a>
-                      <a
-                        href={member.linkedin}
-                        className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition-all duration-300"
-                      >
+                      <a href={member.linkedin} className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition-all duration-300">
                         <Linkedin className="h-5 w-5" />
                       </a>
                     </div>
@@ -277,22 +269,13 @@ export default function TeamPage() {
                     </h3>
                     <p className="text-yellow-400 font-semibold mb-4">{member.position}</p>
                     <div className="flex justify-center space-x-3">
-                      <a
-                        href={`mailto:${member.email}`}
-                        className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition-all duration-300"
-                      >
+                      <a href={`mailto:${member.email}`} className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition-all duration-300">
                         <Mail className="h-4 w-4" />
                       </a>
-                      <a
-                        href={member.linkedin}
-                        className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition-all duration-300"
-                      >
+                      <a href={member.linkedin} className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition-all duration-300">
                         <Linkedin className="h-4 w-4" />
                       </a>
-                      <a
-                        href={member.github}
-                        className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition-all duration-300"
-                      >
+                      <a href={member.github} className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition-all duration-300">
                         <Github className="h-4 w-4" />
                       </a>
                     </div>
@@ -304,7 +287,7 @@ export default function TeamPage() {
         </div>
       </section>
 
-      {/* Team Sections */}
+      {/* Team Members Section */}
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <motion.div
@@ -354,10 +337,7 @@ export default function TeamPage() {
                             {member.name}
                           </h4>
                           <p className="text-gray-400 text-sm mb-3">{member.position}</p>
-                          <a
-                            href={`mailto:${member.email}`}
-                            className="inline-flex items-center justify-center w-8 h-8 bg-gray-800 rounded-full text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition-all duration-300"
-                          >
+                          <a href={`mailto:${member.email}`} className="inline-flex items-center justify-center w-8 h-8 bg-gray-800 rounded-full text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition-all duration-300">
                             <Mail className="h-4 w-4" />
                           </a>
                         </CardContent>
@@ -375,3 +355,4 @@ export default function TeamPage() {
     </div>
   )
 }
+
