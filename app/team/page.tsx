@@ -136,13 +136,13 @@ export default function TeamPage() {
       members: [
         {
           name: "Sampark",
-          position: "#",
+          position: "",
           image: "/Sampark.jpg",
           email: "samparkt@ecell.cgc.edu.in",
         },
         {
           name: "Vibhor",
-          position: "#",
+          position: "",
           image: "/Vibhor.jpg",
           email: "vibhor@ecell.cgc.edu.in",
         },
