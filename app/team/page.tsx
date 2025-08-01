@@ -11,7 +11,7 @@ export default function TeamPage() {
     {
       name: "Dr. Sushil Kumar",
       position: "HOD & Faculty Advisor",
-      image: "/placeholder.svg?height=200&width=200",
+      image:"/sushil.jpg" ,
       email: "sushil.kumar@cgc.edu.in",
       linkedin: "#",
     },
