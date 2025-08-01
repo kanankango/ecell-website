@@ -11,14 +11,14 @@ export default function TeamPage() {
     {
       name: "Dr. Sushil Kumar",
       position: "HOD & Faculty Advisor",
-      image:"/sushil.jpg" ,
+      image:"/HOD.jpg" ,
       email: "sushil.kumar@cgc.edu.in",
       linkedin: "#",
     },
     {
       name: "Dr. Makiran Kaur",
       position: "Faculty Mentor",
-      image: "/mankirat.jpg",
+      image: "/maam.jpg",
       email: "makiran.kaur@cgc.edu.in",
       linkedin: "#",
     },
