@@ -172,7 +172,21 @@ export default function TeamPage() {
           </motion.div>
         </div>
       </section>
+  // ⬇️ Paste the image code **HERE** between the teams and faculty sections:
 
+    <div className="w-full flex justify-center my-10">
+      <img
+        src="/your-big-image.jpg"
+        alt="Team Banner"
+        className="max-w-4xl w-full rounded-lg shadow-lg"
+      />
+    </div>
+
+    {/* render faculty here */}
+
+    <Footer />
+  </div>
+)
       {/* Faculty Section */}
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
