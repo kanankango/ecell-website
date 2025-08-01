@@ -11,7 +11,7 @@ export default function TeamPage() {
     {
       name: "Dr. Sushil Kumar",
       position: "HOD & Faculty Advisor",
-      image:"/HOD.jpg" ,
+      image: "/HOD.jpg",
       email: "sushil.kumar@cgc.edu.in",
       linkedin: "#",
     },
@@ -36,7 +36,7 @@ export default function TeamPage() {
     {
       name: "Aashi Raghuwanshi",
       position: "Vice President",
-      image:  "/aashi.jpg",
+      image: "/aashi.jpg",
       email: "aashi@ecell.cgc.edu.in",
       linkedin: "#",
       github: "#",
@@ -81,7 +81,8 @@ export default function TeamPage() {
           position: "#",
           image: "/.jpg",
           email: "arjun@ecell.cgc.edu.in",
-        },{
+        },
+        {
           name: "Loveneet",
           position: "#",
           image: "/Unnati.jpg",
@@ -104,7 +105,7 @@ export default function TeamPage() {
           image: "/Rujul.jpg",
           email: "rujul@ecell.cgc.edu.in",
         },
-         {
+        {
           name: "Smriti",
           position: "#",
           image: "/Smriti].jpg",
@@ -129,9 +130,7 @@ export default function TeamPage() {
         },
       ],
     },
-  ],
-    
-  {
+    {
       title: "Video Editing Team",
       members: [
         {
@@ -203,7 +202,7 @@ export default function TeamPage() {
               >
                 <Card className="bg-black border-gray-800 hover:border-yellow-400 transition-all duration-300 h-full">
                   <CardContent className="p-8 text-center">
-                    <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-yellow-400">
+                    <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-yellow-400">
                       <img
                         src={member.image || "/placeholder.svg"}
                         alt={member.name}
@@ -216,7 +215,7 @@ export default function TeamPage() {
                     <p className="text-yellow-400 font-semibold mb-4">{member.position}</p>
                     <div className="flex justify-center space-x-4">
                       <a
-                        href={mailto:${member.email}}
+                        href={`mailto:${member.email}`}
                         className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition-all duration-300"
                       >
                         <Mail className="h-5 w-5" />
@@ -265,7 +264,7 @@ export default function TeamPage() {
               >
                 <Card className="bg-gray-900 border-gray-800 hover:border-yellow-400 transition-all duration-300 h-full">
                   <CardContent className="p-8 text-center">
-                    <div className="w-24 h-24 mx-auto mb-6 rounded-full overflow-hidden border-4 border-yellow-400">
+                    <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-yellow-400">
                       <img
                         src={member.image || "/placeholder.svg"}
                         alt={member.name}
@@ -278,7 +277,7 @@ export default function TeamPage() {
                     <p className="text-yellow-400 font-semibold mb-4">{member.position}</p>
                     <div className="flex justify-center space-x-3">
                       <a
-                        href={mailto:${member.email}}
+                        href={`mailto:${member.email}`}
                         className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition-all duration-300"
                       >
                         <Mail className="h-4 w-4" />
@@ -304,7 +303,7 @@ export default function TeamPage() {
         </div>
       </section>
 
-      {/* Team Sections */}
+      {/* Team Members Section */}
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <motion.div
@@ -343,7 +342,7 @@ export default function TeamPage() {
                     >
                       <Card className="bg-black border-gray-800 hover:border-yellow-400 transition-all duration-300">
                         <CardContent className="p-6 text-center">
-                          <div className="w-16 h-16 mx-auto mb-4 rounded-full overflow-hidden border-2 border-yellow-400">
+                          <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-2 border-yellow-400">
                             <img
                               src={member.image || "/placeholder.svg"}
                               alt={member.name}
@@ -355,7 +354,7 @@ export default function TeamPage() {
                           </h4>
                           <p className="text-gray-400 text-sm mb-3">{member.position}</p>
                           <a
-                            href={mailto:${member.email}}
+                            href={`mailto:${member.email}`}
                             className="inline-flex items-center justify-center w-8 h-8 bg-gray-800 rounded-full text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition-all duration-300"
                           >
                             <Mail className="h-4 w-4" />
@@ -375,15 +374,4 @@ export default function TeamPage() {
     </div>
   )
 }
-
-
-
-
-
-
-
-
-
-
-
 
