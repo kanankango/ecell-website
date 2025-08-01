@@ -79,13 +79,13 @@ export default function TeamPage() {
         {
           name: "Ishita",
           position: "#",
-          image: "/.jpg",
+          image: "/Ishita.jpg",
           email: "arjun@ecell.cgc.edu.in",
         },
         {
           name: "Loveneet",
           position: "#",
-          image: "/Unnati.jpg",
+          image: "/member.jpg",
           email: "arjun@ecell.cgc.edu.in",
         },
       ],
@@ -125,7 +125,7 @@ export default function TeamPage() {
         {
           name: "Kamakshi",
           position: "#",
-          image: "/Kamakshi",
+          image: "/kamakshi",
           email: "kamakshi@ecell.cgc.edu.in",
         },
       ],
