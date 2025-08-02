@@ -1,10 +1,11 @@
-  "use client"
 
-import { motion } from "framer-motion"
-import { Card, CardContent } from "@/components/ui/card"
-import { Mail, Linkedin, Github } from "lucide-react"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
+"use client";
+
+import { motion } from "framer-motion";
+import { Card, CardContent } from "@/components/ui/card";
+import { Mail, Linkedin, Github } from "lucide-react";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 export default function TeamPage() {
   const faculty = [
@@ -22,7 +23,7 @@ export default function TeamPage() {
       email: "makiran.kaur@cgc.edu.in",
       linkedin: "#",
     },
-  ]
+  ];
 
   const leadership = [
     {
@@ -41,7 +42,7 @@ export default function TeamPage() {
       linkedin: "#",
       github: "#",
     },
-  ]
+  ];
 
   const teams = [
     {
@@ -147,7 +148,7 @@ export default function TeamPage() {
         },
       ],
     },
-  ]
+  ];
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -172,21 +173,16 @@ export default function TeamPage() {
           </motion.div>
         </div>
       </section>
-  // ⬇️ Paste the image code **HERE** between the teams and faculty sections:
 
-    <div className="w-full flex justify-center my-10">
-      <img
-        src="/your-big-image.jpg"
-        alt="Team Banner"
-        className="max-w-4xl w-full rounded-lg shadow-lg"
-      />
-    </div>
+      {/* Big Image Section */}
+      <div className="w-full flex justify-center my-10">
+        <img
+          src="/Team.jpg"
+          alt="Team Banner"
+          className="max-w-4xl w-full rounded-lg shadow-lg"
+        />
+      </div>
 
-    {/* render faculty here */}
-
-    <Footer />
-  </div>
-)
       {/* Faculty Section */}
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
@@ -342,12 +338,17 @@ export default function TeamPage() {
                 transition={{ duration: 1, delay: teamIndex * 0.2 }}
                 viewport={{ once: true }}
               >
-                <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center text-yellow-400">{team.title}</h3>
+                <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center text-yellow-400">
+                  {team.title}
+                </h3>
                 <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
                   {team.members.map((member, memberIndex) => (
                     <motion.div
                       key={memberIndex}
-                      initial={{ opacity: 0, x: memberIndex % 2 === 0 ? -50 : 50 }}
+                      initial={{
+                        opacity: 0,
+                        x: memberIndex % 2 === 0 ? -50 : 50,
+                      }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ duration: 1, delay: memberIndex * 0.1 }}
                       viewport={{ once: true }}
@@ -386,6 +387,5 @@ export default function TeamPage() {
 
       <Footer />
     </div>
-  )
+  );
 }
-
