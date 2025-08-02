@@ -28,7 +28,7 @@ export default function TeamPage() {
     {
       name: "Sarang Alhawat",
       position: "President",
-      image: "/sarang.jpg",
+      image: "/Sarang.jpg",
       email: "sarang@ecell.cgc.edu.in",
       linkedin: "https://www.linkedin.com/in/sarang-ahlawat/",
       github: "#",
@@ -73,7 +73,7 @@ export default function TeamPage() {
         {
           name: "Kanan Kango",
           position: "#",
-          image: "/placeholder.svg?height=120&width=120",
+          image: "/Kanan.JPG",
           email: "kanan@ecell.cgc.edu.in",
         },
         {
