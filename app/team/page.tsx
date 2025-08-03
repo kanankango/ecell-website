@@ -86,14 +86,8 @@ export default function TeamPage() {
       ],
     },
     {
-      title: "External Operations and Innovation Team",
+      title: "Innovation Team",
       members: [
-        {
-          name: "Lakshya",
-          position: "External Operations and Innovation Head ",
-          image: "/Lakshay.jpg",
-          email: "lakshay@ecell.cgc.edu.in",
-        },
         {
           name: "Rujul Gupta",
           position: "#",
@@ -105,6 +99,35 @@ export default function TeamPage() {
           position: "#",
           image: "/Smriti].jpg",
           email: "smriti@ecell.cgc.edu.in",
+        },
+      ],
+    },
+    {
+      title: "External Operations and PR Team",
+      members: [
+        {
+          name: "Lakshya",
+          position: "External Operations and Innovation Head ",
+          image: "/Lakshay.jpg",
+          email: "lakshay@ecell.cgc.edu.in",
+        },
+        {
+          name: "Ojas Tyagi",
+          position: "#",
+          image: "/Ojas.jpg",
+          email: "ojas@ecell.cgc.edu.in",
+        },
+        {
+          name: "Manav",
+          position: "#",
+          image: "/Manav.jpg",
+          email: "manav@ecell.cgc.edu.in",
+        },
+        {
+          name: "Kushagra Kwatra",
+          position: "#",
+          image: "/Kushagra.jpg",
+          email: "kushagra@ecell.cgc.edu.in",
         },
       ],
     },
