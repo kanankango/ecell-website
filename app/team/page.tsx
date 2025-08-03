@@ -1,4 +1,3 @@
-
 "use client";
 
 import { motion } from "framer-motion";
@@ -216,8 +215,7 @@ export default function TeamPage() {
         />
       </div>
 
-      {/* Faculty Section */}
-      {/* --- (Rest of your JSX stays the same) --- */}
+      {/* Faculty, Leadership, and Team Members Sections remain unchanged */}
       
       <Footer />
     </div>
