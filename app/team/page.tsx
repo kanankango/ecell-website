@@ -72,12 +72,6 @@ export default function TeamPage() {
           email: "unnati@ecell.cgc.edu.in",
         },
         {
-          name: "Kanan Kango",
-          position: "#",
-          image: "/Kanan.JPG",
-          email: "kanan@ecell.cgc.edu.in",
-        },
-        {
           name: "Ishita",
           position: "#",
           image: "/Ishita.jpg",
