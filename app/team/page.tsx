@@ -62,6 +62,18 @@ export default function TeamPage() {
         },
       ],
     },
+     {
+      title: "Student Advisor",
+      members: [
+        {
+          name: "Harshita",
+          position: "#",
+          image: "/harshital.jpg",
+          email: "harshita@ecell.cgc.edu.in",
+        };
+      ],
+    },
+    
     {
       title: "Documentation and Operations Team",
       members: [
@@ -81,7 +93,7 @@ export default function TeamPage() {
           name: "Loveneet",
           position: "#",
           image: "/member.jpg",
-          email: "arjun@ecell.cgc.edu.in",
+          email: "loveneet@ecell.cgc.edu.in",
         },
       ],
     },
@@ -106,7 +118,7 @@ export default function TeamPage() {
       title: "External Operations and PR Team",
       members: [
         {
-          name: "Lakshya",
+          name: "Lakshya Rustagi",
           position: "External Operations and Innovation Head ",
           image: "/Lakshay.jpg",
           email: "lakshay@ecell.cgc.edu.in",
@@ -149,7 +161,7 @@ export default function TeamPage() {
       ],
     },
     {
-      title: "Video Editing Team",
+      title: "Social Media Team",
       members: [
         {
           name: "Sampark",
@@ -157,6 +169,13 @@ export default function TeamPage() {
           image: "/Sampark.jpg",
           email: "samparkt@ecell.cgc.edu.in",
         },
+       
+      ],
+    },
+  ];
+   {
+      title: "Video Editing Team",
+      members: [
         {
           name: "Vibhor",
           position: "",
