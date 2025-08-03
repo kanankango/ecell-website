@@ -29,7 +29,7 @@ export default function TeamPage() {
     {
       name: "Sarang Alhawat",
       position: "President",
-      image: "/Sarang.jpg",
+      image: "/Sarang.png",
       email: "sarang@ecell.cgc.edu.in",
       linkedin: "https://www.linkedin.com/in/sarang-ahlawat/",
       github: "#",
@@ -68,7 +68,7 @@ export default function TeamPage() {
         {
           name: "Harshita",
           position: "#",
-          image: "/harshital.jpg",
+          image: "/harshital.png",
           email: "harshita@ecell.cgc.edu.in",
         };
       ],
