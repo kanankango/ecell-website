@@ -69,7 +69,7 @@ export default function TeamPage() {
           position: "#",
           image: "/harshita.png",
           email: "harshita@ecell.cgc.edu.in",
-        };
+        },
       ],
     },
     {
