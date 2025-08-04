@@ -61,6 +61,17 @@ export default function TeamPage() {
         },
       ],
     },
+     {
+      title: "Student Advisor",
+      members: [
+        {
+          name: "Harshita",
+          position: "#",
+          image: "/harshita.png",
+          email: "harshita@ecell.cgc.edu.in",
+        };
+      ],
+    },
     {
       title: "Documentation and Operations Team",
       members: [
