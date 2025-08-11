@@ -7,15 +7,15 @@ import { Calendar, MapPin, Clock, Users } from "lucide-react"
 
 export default function UpcomingEventsSection() {
   const upcomingEvent = {
-    title: "Ground Zero",
+    title: "Innovision",
     description:
-      "Join us for Ground Zero - an exciting entrepreneurship event where innovation meets opportunity. Connect with like-minded individuals and showcase your ideas.",
+      "Join us for Innovision- an exciting entrepreneurship event where innovation meets opportunity. Connect with like-minded individuals and showcase your ideas.",
     date: "August 5, 2025",
     time: "10:00 AM - 1:00 PM",
     location: "CGC COE Auditorium",
     attendees: "100+ Expected",
     registrationFee: "₹10",
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/public/upcoming event .jpg",
     registrationOpen: true,
   }
 
@@ -29,7 +29,7 @@ export default function UpcomingEventsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-yellow-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
             Upcoming Event
           </h2>
           <div className="w-24 h-1 bg-yellow-400 mx-auto mb-8"></div>
@@ -43,11 +43,11 @@ export default function UpcomingEventsSection() {
           viewport={{ once: true }}
           className="max-w-4xl mx-auto"
         >
-          <Card className="bg-gray-900 border-gray-800 hover:border-yellow-400 transition-all duration-300 overflow-hidden">
+          <Card className="bg-white border-black hover:border-yellow-400 transition-all duration-300 overflow-hidden">
             <div className="md:flex">
               <div className="md:w-1/2">
                 <img
-                  src={upcomingEvent.image || "/placeholder.svg"}
+                  src={upcomingEvent.image || "/public/upcoming event .jpg"}
                   alt={upcomingEvent.title}
                   className="w-full h-64 md:h-full object-cover"
                 />
@@ -65,28 +65,28 @@ export default function UpcomingEventsSection() {
                     )}
                   </div>
 
-                  <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">{upcomingEvent.title}</h3>
+                  <h3 className="text-2xl md:text-3xl font-bold mb-4 text-black">{upcomingEvent.title}</h3>
 
-                  <p className="text-gray-400 mb-6 leading-relaxed">{upcomingEvent.description}</p>
+                  <p className="text-gray-700 mb-6 leading-relaxed">{upcomingEvent.description}</p>
 
                   <div className="space-y-3 mb-6">
-                    <div className="flex items-center space-x-3 text-gray-300">
+                    <div className="flex items-center space-x-3 text-black">
                       <Calendar className="h-5 w-5 text-yellow-400" />
                       <span>{upcomingEvent.date}</span>
                     </div>
-                    <div className="flex items-center space-x-3 text-gray-300">
+                    <div className="flex items-center space-x-3 text-black">
                       <Clock className="h-5 w-5 text-yellow-400" />
                       <span>{upcomingEvent.time}</span>
                     </div>
-                    <div className="flex items-center space-x-3 text-gray-300">
+                    <div className="flex items-center space-x-3 text-black">
                       <MapPin className="h-5 w-5 text-yellow-400" />
                       <span>{upcomingEvent.location}</span>
                     </div>
-                    <div className="flex items-center space-x-3 text-gray-300">
+                    <div className="flex items-center space-x-3 text-black">
                       <Users className="h-5 w-5 text-yellow-400" />
                       <span>{upcomingEvent.attendees}</span>
                     </div>
-                    <div className="flex items-center space-x-3 text-gray-300">
+                    <div className="flex items-center space-x-3 text-black">
                       <span className="h-5 w-5 text-yellow-400 font-bold">₹</span>
                       <span>Registration Fee: {upcomingEvent.registrationFee}</span>
                     </div>

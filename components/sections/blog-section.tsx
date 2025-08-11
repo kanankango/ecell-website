@@ -35,7 +35,7 @@ export default function BlogSection() {
   ]
 
   return (
-    <section className="py-20 bg-gray-900">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -44,11 +44,11 @@ export default function BlogSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-yellow-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 text-black">
             Latest Blog Posts
           </h2>
           <div className="w-24 h-1 bg-yellow-400 mx-auto mb-8"></div>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-black max-w-3xl mx-auto">
             Insights, tips, and stories from the entrepreneurial world
           </p>
         </motion.div>
@@ -64,7 +64,7 @@ export default function BlogSection() {
               whileHover={{ scale: 1.05 }}
               className="group cursor-pointer"
             >
-              <Card className="bg-black border-gray-800 hover:border-yellow-400 transition-all duration-300 h-full overflow-hidden">
+              <Card className="bg-white border-black hover:border-yellow-400 transition-all duration-300 h-full overflow-hidden">
                 <div className="relative">
                   <img
                     src={post.image || "/placeholder.svg"}
@@ -78,10 +78,10 @@ export default function BlogSection() {
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-yellow-400 transition-colors">
+                  <h3 className="text-2xl font-bold mb-3 text-black group-hover:text-yellow-400 transition-colors">
                     {post.title}
                   </h3>
-                  <p className="text-gray-400 mb-4 leading-relaxed">{post.excerpt}</p>
+                  <p className="text-gray-700 mb-4 leading-relaxed">{post.excerpt}</p>
                   <div className="flex items-center justify-between text-sm text-gray-500">
                     <div className="flex items-center space-x-4">
                       <div className="flex items-center space-x-1">
