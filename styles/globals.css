@@ -88,3 +88,14 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* === New class for Faculty Advisors section === */
+.faculty-section {
+  @apply bg-white;
+}
+
+.faculty-section h2,
+.faculty-section p {
+  @apply text-white bg-black px-4 py-2 rounded-md;
+}
+
