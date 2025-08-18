@@ -36,10 +36,12 @@ export default function MissionSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 text-black">
-            Our Mission
-          </h2>
-          <div className="w-24 h-1 bg-yellow-400 mx-auto mb-8"></div>
+          <div className="mb-8 flex justify-center">
+            <span className="inline-block">
+              <h2 className="text-4xl md:text-6xl font-bold text-black">Our Mission</h2>
+              <span className="block h-1 bg-yellow-400 rounded-full mt-3"></span>
+            </span>
+          </div>
           <p className="text-xl text-black max-w-4xl mx-auto leading-relaxed">
             To foster an entrepreneurial ecosystem that transforms innovative ideas into successful ventures, creating
             the next generation of business leaders and change-makers.

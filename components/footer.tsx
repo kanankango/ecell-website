@@ -1,15 +1,15 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react"
+import { Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react"
+import WhatsAppIcon from "@/components/icons/whatsapp"
 import Link from "next/link"
 
 export default function Footer() {
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Instagram, href: "https://www.instagram.com/ecell.cgc.coe?igsh=MWRpYnAwYXAzZGhhMg==", label: "Instagram" },
+    { icon: Linkedin, href: "https://www.linkedin.com/company/ecellcgccoe/", label: "LinkedIn" },
+    { icon: WhatsAppIcon, href: "https://chat.whatsapp.com/E5AtfzSz5rS0Dk2svuw3rQ?mode=ac_t", label: "WhatsApp" },
   ]
 
   return (
@@ -19,9 +19,11 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-black font-bold text-xl">E</span>
-              </div>
+              <img
+                src="/logo.jpg"
+                alt="E-Cell CGC Logo"
+                className="w-10 h-10 rounded-full border-2 border-yellow-400 shadow-[0_0_10px_rgba(255,215,0,0.25)] object-cover"
+              />
               <span className="text-white font-bold text-xl">E-CELL CGC</span>
             </div>
             <p className="text-gray-400 leading-relaxed">
