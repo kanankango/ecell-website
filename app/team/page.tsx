@@ -28,7 +28,7 @@ export default function TeamPage() {
     {
       name: "Sarang Alhawat",
       position: "President",
-      image: "/Sarang.jpg",
+      image: "/Sarang .jpg",
       email: "sarang@ecell.cgc.edu.in",
       linkedin: "https://www.linkedin.com/in/sarang-ahlawat/",
       github: "#",
@@ -125,7 +125,7 @@ export default function TeamPage() {
         {
           name: "Kamakshi",
           position: "#",
-          image: "/kamakshi",
+          image: "/Kamakshi.jpg",
           email: "kamakshi@ecell.cgc.edu.in",
         },
       ],
@@ -171,24 +171,19 @@ export default function TeamPage() {
             </p>
           </motion.div>
         </div>
-      </section>
-  // ⬇ Paste the image code *HERE* between the teams and faculty sections:
+</section>
 
-    <div className="w-full flex justify-center my-10">
-      <img
-        src="/your-big-image.jpg"
-        alt="Team Banner"
-        className="max-w-4xl w-full rounded-lg shadow-lg"
-      />
-    </div>
+{/* Image Banner Section */}
+<div className="w-full flex justify-center my-10">
+  <img
+    src="/your-big-image.jpg"
+    alt="Team Banner"
+    className="max-w-4xl w-full rounded-lg shadow-lg"
+  />
+</div>
 
-    {/* render faculty here */}
-
-    <Footer />
-  </div>
-)
-      {/* Faculty Section */}
-      <section className="py-20 bg-gray-900">
+{/* Faculty Section */}
+<section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -229,7 +224,7 @@ export default function TeamPage() {
                     <p className="text-yellow-400 font-semibold mb-4">{member.position}</p>
                     <div className="flex justify-center space-x-4">
                       <a
-                        href={mailto:${member.email}}
+                        href={`mailto:${member.email}`}
                         className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition-all duration-300"
                       >
                         <Mail className="h-5 w-5" />
@@ -291,13 +286,14 @@ export default function TeamPage() {
                     <p className="text-yellow-400 font-semibold mb-4">{member.position}</p>
                     <div className="flex justify-center space-x-3">
                       <a
-                        href={mailto:${member.email}}
+                        href={`mailto:${member.email}`}
                         className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition-all duration-300"
                       >
                         <Mail className="h-4 w-4" />
                       </a>
                       <a
                         href={member.linkedin}
+                        title={`View ${member.name}'s LinkedIn`}
                         className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition-all duration-300"
                       >
                         <Linkedin className="h-4 w-4" />
@@ -368,10 +364,12 @@ export default function TeamPage() {
                           </h4>
                           <p className="text-gray-400 text-sm mb-3">{member.position}</p>
                           <a
-                            href={mailto:${member.email}}
+                            href={`mailto:${member.email}`}
+                            title={`Send email to ${member.name}`}
                             className="inline-flex items-center justify-center w-8 h-8 bg-gray-800 rounded-full text-gray-400 hover:text-yellow-400 hover:bg-gray-700 transition-all duration-300"
+                            aria-label={`Send email to ${member.name}`}
                           >
-                            <Mail className="h-4 w-4" />
+                            <Mail className="h-4 w-4" aria-label={`Send email to ${member.name}`} />
                           </a>
                         </CardContent>
                       </Card>
