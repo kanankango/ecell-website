@@ -41,10 +41,12 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-              <span className="text-black font-bold text-xl">E</span>
-            </div>
-            <span className="text-black font-bold text-xl">E-CELL CGC</span>
+            <img
+              src="/logo.jpg"
+              alt="E-Cell CGC Logo"
+              className="w-10 h-10 rounded-full object-cover"
+            />
+            <span className="text-yellow-400 font-bold text-xl">E-CELL CGC-COE</span>
           </Link>
 
           {/* Desktop Navigation */}

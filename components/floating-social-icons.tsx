@@ -1,14 +1,14 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+import { Instagram, Linkedin } from "lucide-react"
+import WhatsAppIcon from "@/components/icons/whatsapp"
 
 export default function FloatingSocialIcons() {
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Instagram, href: "https://www.instagram.com/ecell.cgc.coe?igsh=MWRpYnAwYXAzZGhhMg==", label: "Instagram" },
+    { icon: Linkedin, href: "https://www.linkedin.com/company/ecellcgccoe/", label: "LinkedIn" },
+    { icon: WhatsAppIcon, href: "https://chat.whatsapp.com/E5AtfzSz5rS0Dk2svuw3rQ?mode=ac_t", label: "WhatsApp" },
   ]
 
   return (

@@ -18,7 +18,7 @@ export default function NewsletterSection() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-yellow-400 bg-clip-text text-transparent">
             Stay Updated
           </h2>
-          <p className="text-xl text-gray-300 mb-8">Get the latest updates on events, startups, and opportunities</p>
+          <p className="text-xl text-gray-300 mb-8 leading-relaxed">Get the latest updates on events, startups, and opportunities</p>
           <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <Input
               type="email"

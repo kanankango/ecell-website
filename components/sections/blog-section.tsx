@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Calendar, User } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function BlogSection() {
   const blogPosts = [
@@ -13,7 +14,7 @@ export default function BlogSection() {
       excerpt: "Exploring the emerging trends and opportunities in the Indian startup ecosystem...",
       author: "E-Cell Team",
       date: "Jan 15, 2024",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/Insights.png",
       category: "Insights",
     },
     {
@@ -21,7 +22,7 @@ export default function BlogSection() {
       excerpt: "Key strategies for assembling and managing a high-performing startup team...",
       author: "Sarang Alhawat",
       date: "Jan 10, 2024",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/Tips.png",
       category: "Tips",
     },
     {
@@ -29,7 +30,7 @@ export default function BlogSection() {
       excerpt: "Navigate the complex world of startup funding with our comprehensive guide...",
       author: "Aashi Raghuwanshi",
       date: "Jan 5, 2024",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/Finance.png",
       category: "Finance",
     },
   ]
@@ -44,11 +45,13 @@ export default function BlogSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 text-black">
-            Latest Blog Posts
-          </h2>
-          <div className="w-24 h-1 bg-yellow-400 mx-auto mb-8"></div>
-          <p className="text-xl text-black max-w-3xl mx-auto">
+          <div className="mb-8 flex justify-center">
+            <span className="inline-block">
+              <h2 className="text-4xl md:text-6xl font-bold text-black">Latest Blog Posts</h2>
+              <span className="block h-1 bg-yellow-400 rounded-full mt-3"></span>
+            </span>
+          </div>
+          <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
             Insights, tips, and stories from the entrepreneurial world
           </p>
         </motion.div>
@@ -66,10 +69,13 @@ export default function BlogSection() {
             >
               <Card className="bg-white border-black hover:border-yellow-400 transition-all duration-300 h-full overflow-hidden">
                 <div className="relative">
-                  <img
+                  <Image
                     src={post.image || "/placeholder.svg"}
                     alt={post.title}
+                    width={400}
+                    height={300}
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                    priority={index === 0}
                   />
                   <div className="absolute top-4 left-4">
                     <span className="px-3 py-1 bg-yellow-400 text-black text-sm font-semibold rounded-full">
