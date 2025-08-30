@@ -6,13 +6,9 @@ import { Calendar, MapPin, Clock, Users } from "lucide-react"
 
 export default function UpcomingEventsSection() {
   const upcomingEvent = {
-    title: "Eureka! Pitching Competition",
+    title: "Coming Soon!",
     description:
-      "A flagship event bringing together brilliant minds to brainstorm and build impactful solutions.",
-    date: "21 August 2025",
-    time: "10 AM – 4:30 PM",
-    location: "Main Auditorium",
-    registrationFee: "Registration Fee - Free",
+      "Will be live ASAP. Stay Updated!",
   }
 
   return (
@@ -47,8 +43,8 @@ export default function UpcomingEventsSection() {
               <p className="text-gray-300 mb-6 leading-relaxed">{upcomingEvent.description}</p>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3 text-gray-300">
-                  <Calendar className="h-5 w-5 text-yellow-400" />
-                  <span className="text-white">{upcomingEvent.date}</span>
+                  {/* <Calendar className="h-5 w-5 text-yellow-400" /> */}
+                  {/* <span className="text-white">{upcomingEvent.date}</span>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300">
                   <Clock className="h-5 w-5 text-yellow-400" />
@@ -60,7 +56,7 @@ export default function UpcomingEventsSection() {
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300">
                   <span className="font-bold text-yellow-400">₹</span>
-                  <span className="text-white">{upcomingEvent.registrationFee}</span>
+                  <span className="text-white">{upcomingEvent.registrationFee}</span> */}
                 </div>
               </div>
             </CardContent>
