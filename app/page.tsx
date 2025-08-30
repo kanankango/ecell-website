@@ -10,6 +10,8 @@ import BlogSection from "@/components/sections/blog-section"
 import UpcomingEventsSection from "@/components/sections/upcoming-events-section"
 import NewsletterSection from "@/components/sections/newsletter-section"
 import FloatingSocialIcons from "@/components/floating-social-icons"
+import AnnouncementsSection from "@/components/sections/announcements-section"
+import EventsOrganizedSection from "@/components/sections/events-organized-section"
 
 export default function HomePage() {
   const { scrollYProgress } = useScroll()
@@ -23,7 +25,9 @@ export default function HomePage() {
       <MissionSection />
       <GallerySection />
       <BlogSection />
+      <AnnouncementsSection />
       <UpcomingEventsSection />
+      <EventsOrganizedSection />
       <NewsletterSection />
       <FloatingSocialIcons />
       <Footer />
