@@ -1,13 +1,12 @@
-"use client"
+"use client";
 
-import { motion, useScroll, useTransform } from "framer-motion"
-import { ArrowRight } from "lucide-react"
-import Link from "next/link"
- 
+import { motion, useScroll, useTransform } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function HeroSection() {
-  const { scrollYProgress } = useScroll()
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"])
+  const { scrollYProgress } = useScroll();
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
@@ -24,12 +23,25 @@ export default function HeroSection() {
           >
             <h1 className="text-5xl md:text-7xl font-extrabold mb-10 text-white">
               <span className="inline-block">
-                Entrepreneurship Cell <span className="inline-block text-yellow-400" style={{ textShadow: "0 0 6px rgba(255,215,0,0.35), 0 0 14px rgba(255,193,7,0.25), 0 0 28px rgba(255,140,0,0.18)" }}>CGC-COE</span>
-                <span className="block h-px bg-yellow-400 rounded-full mt-4"></span>
+                Entrepreneurship Cell{" "}
+                <span
+                  className="inline-block text-golden-300 glow-golden-text"
+                  style={{
+                    textShadow:
+                      "0 0 6px rgba(255,215,0,0.35), 0 0 14px rgba(255,193,7,0.25), 0 0 28px rgba(255,140,0,0.18)",
+                  }}
+                >
+                  CGC-COE
+                </span>
+                <span className="block h-px bg-golden-300 rounded-full mt-4 glow-golden"></span>
               </span>
             </h1>
-            <h2 className="text-xl md:text-3xl font-light text-gray-300 mt-5 leading-relaxed">Fueling Ideas into Impact</h2>
-            <p className="text-lg md:text-xl text-gray-400 mt-2 leading-relaxed">Empowering the Entrepreneurs of Tomorrow at CGC-COE</p>
+            <h2 className="text-xl md:text-3xl font-light text-gray-300 mt-5 leading-relaxed">
+              Fueling Ideas into Impact
+            </h2>
+            <p className="text-lg md:text-xl text-gray-400 mt-2 leading-relaxed">
+              Empowering the Entrepreneurs of Tomorrow at CGC-COE
+            </p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -37,14 +49,16 @@ export default function HeroSection() {
             transition={{ duration: 1, delay: 1 }}
             className="mt-6 md:mt-8"
           >
-            <Link href="/mission" className="inline-flex items-center text-yellow-400 font-semibold hover:underline">
-              Join our mission <ArrowRight className="ml-2 h-5 w-5" />
+            <Link
+              href="/mission"
+              className="inline-flex items-center text-golden-300 font-semibold hover:text-golden-200 transition-colors duration-300 group"
+            >
+              Join our mission{" "}
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
             </Link>
           </motion.div>
         </div>
       </div>
-
-      
     </section>
-  )
+  );
 }

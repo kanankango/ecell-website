@@ -36,6 +36,15 @@
   }
 }
 
+/* Enhanced golden color palette */
+:root {
+  --golden-primary: #ffd700;
+  --golden-secondary: #ffed4e;
+  --golden-accent: #ffb347;
+  --golden-dark: #b8860b;
+  --golden-light: #fff8dc;
+}
+
 /* Ensure pure black background */
 .bg-black {
   background-color: #000000 !important;
@@ -51,7 +60,42 @@
   background-color: #000000 !important;
 }
 
-/* Custom scrollbar */
+/* Enhanced golden text colors */
+.text-golden {
+  color: var(--golden-primary) !important;
+}
+
+.text-golden-secondary {
+  color: var(--golden-secondary) !important;
+}
+
+.text-golden-accent {
+  color: var(--golden-accent) !important;
+}
+
+/* Enhanced golden background colors */
+.bg-golden {
+  background-color: var(--golden-primary) !important;
+}
+
+.bg-golden-secondary {
+  background-color: var(--golden-secondary) !important;
+}
+
+.bg-golden-accent {
+  background-color: var(--golden-accent) !important;
+}
+
+/* Enhanced golden borders */
+.border-golden {
+  border-color: var(--golden-primary) !important;
+}
+
+.border-golden-secondary {
+  border-color: var(--golden-secondary) !important;
+}
+
+/* Custom scrollbar with enhanced golden theme */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -61,12 +105,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ffd700;
+  background: var(--golden-primary);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffed4e;
+  background: var(--golden-secondary);
 }
 
 /* Smooth scrolling */
@@ -74,7 +118,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom animations */
+/* Enhanced custom animations */
 @keyframes float {
   0%,
   100% {
@@ -89,7 +133,7 @@ html {
   animation: float 6s ease-in-out infinite;
 }
 
-/* Gradient text animation */
+/* Enhanced gradient text animation */
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -103,7 +147,13 @@ html {
 }
 
 .animate-gradient {
-  background: linear-gradient(-45deg, #ffffff, #ffd700, #ffffff, #ffd700);
+  background: linear-gradient(
+    -45deg,
+    #ffffff,
+    var(--golden-primary),
+    #ffffff,
+    var(--golden-secondary)
+  );
   background-size: 400% 400%;
   animation: gradient 3s ease infinite;
   -webkit-background-clip: text;
@@ -111,30 +161,69 @@ html {
   background-clip: text;
 }
 
-/* Ensure no blue colors anywhere */
+/* Enhanced golden glow effects */
+.glow-golden {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.glow-golden-text {
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Ensure no blue colors anywhere - replace with golden */
 .text-blue-400,
 .text-blue-500,
 .text-blue-600 {
-  color: #ffd700 !important;
+  color: var(--golden-primary) !important;
 }
 
 .border-blue-400,
 .border-blue-500 {
-  border-color: #ffd700 !important;
+  border-color: var(--golden-primary) !important;
 }
 
 .hover\:text-blue-400:hover,
 .hover\:text-blue-500:hover {
-  color: #ffd700 !important;
+  color: var(--golden-primary) !important;
 }
 
 .hover\:border-blue-400:hover,
 .hover\:border-blue-500:hover {
-  border-color: #ffd700 !important;
+  border-color: var(--golden-primary) !important;
 }
 
 .hover\:bg-blue-400:hover,
 .hover\:bg-blue-500:hover {
-  background-color: #ffd700 !important;
+  background-color: var(--golden-primary) !important;
   color: #000000 !important;
+}
+
+/* Enhanced hover effects for golden elements */
+.hover\:text-golden:hover {
+  color: var(--golden-secondary) !important;
+}
+
+.hover\:bg-golden:hover {
+  background-color: var(--golden-secondary) !important;
+  color: #000000 !important;
+}
+
+/* Enhanced focus states */
+.focus\:ring-golden:focus {
+  --tw-ring-color: var(--golden-primary) !important;
+}
+
+.focus\:border-golden:focus {
+  border-color: var(--golden-primary) !important;
+}
+
+/* Enhanced selection colors */
+::selection {
+  background-color: var(--golden-primary);
+  color: #000000;
+}
+
+::-moz-selection {
+  background-color: var(--golden-primary);
+  color: #000000;
 }
