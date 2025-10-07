@@ -28,7 +28,7 @@ export default function TeamPage() {
     {
       name: "Sarang Alhawat",
       position: "President",
-      image: "/Sarang .jpg",
+      image: "/Sarang.jpg",
       email: "sarang@ecell.cgc.edu.in",
       linkedin: "https://www.linkedin.com/in/sarang-ahlawat/",
       github: "#",
@@ -56,7 +56,7 @@ export default function TeamPage() {
         {
           name: "Shree Sharma",
           position: "#",
-          image: "/WhatsApp Image 2025-06-18 at 18.24.44_9126fff7.jpg",
+          image: "/WhatsApp-Image-2025-06-18-at-18.24.44_9126fff7.jpg",
           email: "shree@ecell.cgc.edu.in",
         },
       ],
@@ -108,7 +108,7 @@ export default function TeamPage() {
         {
           name: "Smriti",
           position: "#",
-          image: "/Smriti].jpg",
+          image: "/Smriti.jpg",
           email: "smriti@ecell.cgc.edu.in",
         },
       ],
